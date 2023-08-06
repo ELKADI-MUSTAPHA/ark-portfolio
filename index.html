@@ -6,41 +6,22 @@
     <title>PORTFOLIO | MUSTAPHA ETTANTI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/query.css">
+    <link rel="shortcut icon" href="./images/logo-kadev.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 <body>
-    <header class="bg-black shadow-lg ps-md-3">
+
+    <header class="bg-black shadow-lg ps-md-3 sticky-top">
         <div class="container">
             <div class="row ">
                 <div class="col-lg-3 col-4 d-flex align-items-center">
-                    <img src="./images/logo-kadev.jpg" alt="" class="logo-img">
+                    <img src="./images/logo-kadev-video2.gif" alt="" class="logo-img">
                     <h3 class="logo-name ps-2">MUSTAPHA <br>
                     ETTANTI</h3>
                 </div>
                 <div class="col-lg-6 col-2 order-lg-2 order-3">
-                    <!-- <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid justify-content-end">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="navbar-nav">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">About Me</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Skills</a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="#" class="nav-link">My Future</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                    </nav> -->
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
                           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -57,13 +38,16 @@
                                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Link</a>
+                                  <a class="nav-link" aria-current="page"  href="#about">About me</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Link</a>
+                                  <a class="nav-link" aria-current="page" href="#skills">Skills</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Link</a>
+                                  <a class="nav-link" aria-current="page" href="#myCarousel">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" aria-current="page" href="#contact">Contact me</a>
                                 </li>
                               </ul>
                             </div>
@@ -71,43 +55,476 @@
                         </div>
                       </nav>
                 </div>
-                <div class="col-lg-3 col-6 order-lg-3 order-2 d-flex align-items-center justify-content-evenly social">
-                    <a href="#"><i class="icon ion-social-instagram"></i></a>
-                    <a href="#"><i class="icon ion-social-facebook"></i></a>
-                    <a href="#"><i class="icon ion-social-github"></i></a>
-                    <a href="#"><i class="icon ion-social-linkedin"></i></a>
-                    
+                <div class="col-lg-3 col-6 order-lg-3 order-2 d-flex align-items-center justify-content-center social">
+                    <a id="insta-link" href="https://www.instagram.com/el9adii/" class="header-social-link instagram-link">
+                      <div class="clone-card one">
+                        <div class="container-social one">
+                           <div class="profile-social">
+                              <div class="profile-image">
+                                 <img src="./images/profile.jpg" alt="">
+                              </div>
+                              <div class="profile-user-settings">
+                                 <h1 class="profile-user-name">@el9adii</h1>
+                                 <i class="fas fa-check-circle btn-social profile-settings-btn" aria-hidden="true"></i>
+                              </div>
+                              <div class="profile-stats">
+                                 <ul>
+                                    <li><span class="profile-stat-count">14</span> posts</li>
+                                    <li><span class="profile-stat-count">1.4K</span> followers</li>
+                                    <li><span class="profile-stat-count">57</span> following</li>
+                                 </ul>
+                              </div>
+                              <div class="profile-bio">
+                                 <p class="fw-bold mb-0"><span class="profile-real-name lh-lg">Mustapha Ettanti</span><br> Life Experiences | Career | Entrepreneurship</p>
+                                 <p><span class="profile-real-name">تجارب الحياة | المسار المهني | عالم التجارة و المشاريع</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="container-social two">
+                           <div class="gallery-social">
+                              <div class="gallery-item-social" tabindex="0">
+                                 <img src="./images/thumb1.jpg" class="gallery-image" alt="">
+                                 <div class="gallery-item-info">
+                                    <ul>
+                                       <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                       <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="gallery-item-social" tabindex="0">
+                                 <img src="./images/thumb2.jpg" class="gallery-image" alt="">
+                                 <div class="gallery-item-info">
+                                    <ul>
+                                       <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                                       <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="gallery-item-social" tabindex="0">
+                                 <img src="./images/thumb3.jpg" class="gallery-image" alt="">
+                                 <div class="gallery-item-type">
+                                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                                 </div>
+                                 <div class="gallery-item-info">
+                                    <ul>
+                                       <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
+                                       <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <button id="insta-btn"  class="btn-social profile-edit-btn">Visit Profile</button>
+                      </div>
+                      <i class="icon ion-social-instagram"></i>
+                    </a>
+                    <a id="tiktok-link" href="https://www.tiktok.com/@el9adii" class="header-social-link tiktok-link">
+                      <div class="clone-card two">
+                        <div class="container-social one">
+                           <div class="profile-social">
+                              <div class="profile-image">
+                                 <img src="./images/profile.jpg" alt="">
+                              </div>
+                              <div class="profile-user-settings">
+                                 <h1 class="profile-user-name">@el9adii</h1>
+                                 <i class="fas fa-check-circle btn-social profile-settings-btn" aria-hidden="true"></i>
+                              </div>
+                              <div class="profile-stats">
+                                 <ul>
+                                   <li><span class="profile-stat-count">150</span> following</li>
+                                   <li><span class="profile-stat-count">39.2K</span> followers</li>
+                                    <li><span class="profile-stat-count">155.5K</span> Likes</li>
+                                 </ul>
+                              </div>
+                              <div class="profile-bio">
+                                 <p class="fw-bold mb-0"><span class="profile-real-name lh-lg">Mustapha Ettanti</span><br> Life Experiences | Career | Entrepreneurship</p>
+                                 <p><span class="profile-real-name">تجارب الحياة | المسار المهني | عالم التجارة و المشاريع</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="container-social two">
+                           <div class="gallery-social">
+                              <div class="gallery-item-social" tabindex="0">
+                                 <img src="./images/thumb3.jpg" class="gallery-image" alt="">
+                                 <div class="gallery-item-info">
+                                    <ul>
+                                       <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                       <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="gallery-item-social" tabindex="0">
+                                 <img src="./images/thumb1.jpg" class="gallery-image" alt="">
+                                 <div class="gallery-item-info">
+                                    <ul>
+                                       <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                                       <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="gallery-item-social" tabindex="0">
+                                 <img src="./images/thumb2.jpg" class="gallery-image" alt="">
+                                 <div class="gallery-item-type">
+                                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                                 </div>
+                                 <div class="gallery-item-info">
+                                    <ul>
+                                       <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
+                                       <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <button id="tiktok-btn" class="btn-social profile-edit-btn">Visit Profile</button>
+                      </div>
+                      <img class="icon tiktok" src="./images/tiktok.svg" alt="">
+                    </a>
+                    <a id="github-link" href="https://github.com/ELKADI-MUSTAPHA" class="header-social-link github-link">
+                      <div class="clone-card three">
+                        <div class="container-social one">
+                           <div class="profile-social">
+                              <div class="profile-image">
+                                 <img src="./images/picture.png" alt="">
+                              </div>
+                              <div class="profile-user-settings">
+                                 <h1 class="profile-user-name">MUSTAPHA DEV</h1>
+                              </div>
+                              <div class="profile-stats">
+                                 <ul>
+                                    <li><span class="profile-stat-count">ELKADI-MUSTAPHA</span></li><br>
+                                    <li>Follow</li>
+                                 </ul>
+                              </div>
+                              <div class="profile-bio">
+                                 <p class="fw-bold mb-0"><span class="profile-real-name lh-lg">Freelancer / JavaScript Developer / Web Developer</span></p>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <button id="github-btn" class="btn-social profile-edit-btn">Visit Profile</button>
+                      </div>
+                      <i class="icon ion-social-github"></i>
+                    </a>
+                    <a id="linkedin-link" href="https://www.linkedin.com/in/mustapha-ettanti-1b2486175/" class="header-social-link linkedin-link">
+                      <div class="clone-card four">
+                        <div class="container-social one">
+                           <div class="profile-social">
+                              <div class="profile-image">
+                                 <img src="./images/picture.png" alt="">
+                              </div>
+                              <div class="profile-user-settings">
+                                 <h1 class="profile-user-name">Mustapha ETTANTI</h1>
+                              </div>
+                              <div class="profile-stats">
+                                 <ul>
+                                    <li><span class="profile-stat-count">102 </span>relations</li>
+                                    <li><span class="profile-stat-count">Connect</span></li>
+                                    <li><span class="profile-stat-count">Message</span></li>
+                                 </ul>
+                              </div>
+                              <div class="profile-bio">
+                                 <p class="fw-bold mb-0"><span class="profile-real-name lh-lg">MERN Stack Developer</span></p>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <button id="linkedin-btn" class="btn-social profile-edit-btn">Visit Profile</button>
+                      </div>
+                      <i class="icon ion-social-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
 <main>
-    <section class="home">
+  <div class="fixed">
+    <img class="vector1 visiblity" src="./images/vector1.png" alt="">
+    <img class="vector2" src="./images/vector2.png" alt="">
+    <img class="vector3" src="./images/vector3.png" alt="">
+    <img src="./images/logo-kadev-video2.gif" alt="" class="logo-img">
+    <span class="span-one opacity">Look at this</span>
+    <span class="span-two">That's Nice</span>
+    <span class="span-three">Hard work beats<br> every time</span>
+    <span class="span-four">Good luck!</span>
+  </div>
+    <section class="home" id="home">
+      <div class='ripple-background'>
+        <div class='circle-bg xxlarge-bg shade1'></div>
+        <div class='circle-bg xlarge-bg shade2'></div>
+        <div class='circle-bg large-bg shade3'></div>
+        <div class='circle-bg mediun-bg shade4'></div>
+        <div class='circle-bg small-bg shade5'></div>
+      </div>
       <div class="container-fluid d-flex justify-content-center align-items-center flex-column">
-        <div class="col-12 text-center">
-          <h1>
-            I am Mustapha Ettanti
-          </h1>
-        </div>
-        <div class="col-md-8 text-center">
-          <div class="description">
+        <div class="col-12 row d-flex align-items-center justify-content-center">
+          <div class="col-6 home-img">
             <img src="./images/picture.png" alt="">
-            <div class="para">
-              <p class="text-white fw-bold">I am a future web developer.</p>
-              <p class="text-white fw-bold">I changed my career to become a full time web developer.</p>
-              <p class="text-white fw-bold">I love immersing myself in front-end and back-end development.</p>
-              <p class="text-white fw-bold">I love learning about new technologies.</p>
-              <p class="text-white fw-bold">I have a dream to build a cool project in the future.</p>
+          </div>
+          <div class="col-md-6">
+            <h1 class="homepic">
+              I am <br>Mustapha <br> Ettanti
+            </h1>
+            <div class="description">
+              <div class="para">
+                <p class="text-white fw-bold">I am a future web developer.</p>
+                <p class="text-white fw-bold">I like learning about new technologies.</p>
+                <p class="text-white fw-bold">I want to build a cool project in the future.</p>
+              </div>
             </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-6 desc">
+            <span class="aboutpic">About me</span>
+            <h2>Creative Web Developer</h2>
+            <p>Also signs his face were digns fish don't first isn't over evening hath divided days light darkness gathering moved dry all darkness then fourth can't create d forth Also signs Also signs his face were moltenus Also signs his face</p>
+            <button class="btn btn-primary">Download CV</button>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center img-section">
+            <img src="./images/for-portfolio3.png" class="about-img" alt="">
+            <img src="./images/graph1.png" class="graph1" alt="">
           </div>
         </div>
       </div>
     </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 skill d-flex align-items-center justify-content-center">
+            <img src="./images/akrx-img1.png" class="skillpic" alt="">
+          </div>
+          <div class="col-6 skill-title">
+            <h2>Junior MERN Stack Developer at ARKx Academy</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills two">
+      <h1>Skills</h1>
+      <div class="container">
+        <div class="row">
+          <div class="skills-items row gy-5 col-12 d-flex justify-content-center align-items-center">
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="skill-item">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="number" id="number1">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                          <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#7ed956" />
+                                <stop offset="100%" stop-color="#0bc2d9" />
+                            </linearGradient>
+                          </defs>
+                          <circle class="circle one" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      </svg>
+                  </div>
+                  <h3>HTML</h3>
+                </div>
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="skill-item">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="number" id="number2">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                          <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#7ed956" />
+                                <stop offset="100%" stop-color="#0bc2d9" />
+                            </linearGradient>
+                          </defs>
+                          <circle class="circle two" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      </svg>
+                  </div>
+                  <h3>CSS</h3>
+                </div>
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="skill-item">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="number" id="number3">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                          <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#7ed956" />
+                                <stop offset="100%" stop-color="#0bc2d9" />
+                            </linearGradient>
+                          </defs>
+                          <circle class="circle three" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      </svg>
+                  </div>
+                  <h3>JAVASCRIPT</h3>
+                </div>
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="skill-item">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="number" id="number4">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                          <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#7ed956" />
+                                <stop offset="100%" stop-color="#0bc2d9" />
+                            </linearGradient>
+                          </defs>
+                          <circle class="circle four" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      </svg>
+                  </div>
+                  <h3>REACT.JS</h3>
+                </div>
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="skill-item">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="number" id="number5">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                          <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#7ed956" />
+                                <stop offset="100%" stop-color="#0bc2d9" />
+                            </linearGradient>
+                          </defs>
+                          <circle class="circle five" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      </svg>
+                  </div>
+                  <h3>PREMIER PRO</h3>
+                </div>
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="skill-item">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="number" id="number6">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                          <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#7ed956" />
+                                <stop offset="100%" stop-color="#0bc2d9" />
+                            </linearGradient>
+                          </defs>
+                          <circle class="circle six" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      </svg>
+                  </div>
+                  <h3>ILLUSTRATOR</h3>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="myCarousel" class="projects carousel carousel-fade" data-ride="carousel">
+      <h1>Projects</h1>
+      <div class="pjcts-inner">
+        <div class="carousel-inner">
+          <div class="carousel-item bg bg1">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/arkxacademy/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg bg2">
+            <div class="container">
+              <div class="carousel-caption">
+                
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/bluebuildings/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg bg3">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/digital-marketing/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg bg4">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/ecolo/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg bg5">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/grid-gallery/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg bg6">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/resta-static/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg bg7 active">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/safariyat/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg bg8">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://elkadi-mustapha.github.io/tasyiir/" role="button">Visit Website</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+         
     <section class="contact" id="contact">
         <h3>We'd love to hear from you!</h3>
-        <div class="container-contact">
-            <div class="row-contact input-container">
+        <div class="container-contact row d-flex justify-content-center align-items-start">
+            <div class="col-6 row-contact input-container">
                 <div>
                     <div class="styled-input wide">
                         <input type="text" required />
@@ -136,11 +553,191 @@
                     <div class="submit-button">Send Message</div>
                 </div>
             </div>
+            <div class="col-6 d-md-flex justify-content-md-center align-items-md-center gif-container">
+              <img src="./images/logo-kadev-video2.gif" alt="" class="contact-gif">
+            </div>
         </div>
     </section>
-</main>
+      <div class="footer-basic">
+        <footer>
+            <div class="social">
+              <a href="https://www.instagram.com/el9adii/"><i class="icon ion-social-instagram"></i></a>
+              <a href="https://twitter.com/DevMustapha"><i class="icon ion-social-twitter"></i></a>
+              <a href="https://youtube.com/@el9adii"><i class="icon ion-social-youtube"></i></a>
+              <a href="https://facebook.com/el9adiy/"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#home">Home</a></li>
+                <li class="list-inline-item"><a href="#about">ABout me</a></li>
+                <li class="list-inline-item"><a href="#skills">Skills</a></li>
+                <li class="list-inline-item"><a href="#myCarousel">Projects</a></li>
+                <li class="list-inline-item"><a href="#contact">Contact me</a></li>
+            </ul>
+            <p class="copyright">KADEV Copyright © 2023</p>
+        </footer>
+    </div>
+   </main>
+<script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+<script>
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).scroll(function () {
+    if ($('.homepic').isInViewport()) {
+        $('.span-one').addClass('opacity');
+        $('.span-two').removeClass('opacity');
+        $('.span-three').removeClass('opacity');
+        $('.span-four').removeClass('opacity');
+
+        $('.vector1').addClass('visiblity');
+        $('.vector2').removeClass('visiblity');
+        $('.vector3').removeClass('visiblity');
+    }
+    
+    else if ($('.aboutpic').isInViewport()) {
+        $('.span-two').addClass('opacity');
+        $('.span-one').removeClass('opacity');
+        $('.span-three').removeClass('opacity');
+        $('.span-four').removeClass('opacity');
+
+        $('.vector2').addClass('visiblity');
+        $('.vector1').removeClass('visiblity');
+        $('.vector3').removeClass('visiblity');
+    }
+
+    else if ($('.skillpic').isInViewport()) {
+        $('.span-three').addClass('opacity');
+        $('.span-one').removeClass('opacity');
+        $('.span-two').removeClass('opacity');
+        $('.span-four').removeClass('opacity');
+
+        $('.vector3').addClass('visiblity');
+        $('.vector1').removeClass('visiblity');
+        $('.vector2').removeClass('visiblity');
+    }
+
+    else if ($('.container-contact').isInViewport()) {
+        $('.span-four').addClass('opacity');
+        $('.span-one').removeClass('opacity');
+        $('.span-two').removeClass('opacity');
+        $('.span-three').removeClass('opacity');
+
+        $('.vector2').addClass('visiblity');
+        $('.vector1').removeClass('visiblity');
+        $('.vector3').removeClass('visiblity');
+    }
+
+    else if ($('.skills-items').isInViewport()) {
+      $('circle.one').addClass('animateit1');
+      $('circle.two').addClass('animateit2');
+      $('circle.three').addClass('animateit3');
+      $('circle.four').addClass('animateit4');
+      $('circle.five').addClass('animateit5');
+      $('circle.six').addClass('animateit6');
+    }
+
+    else {
+        $('.span-four').removeClass('opacity');
+    }
+});
+
+let number1 = document.getElementById("number1");
+let number2 = document.getElementById("number2");
+let number3 = document.getElementById("number3");
+let number4 = document.getElementById("number4");
+let number5 = document.getElementById("number5");
+let number6 = document.getElementById("number6");
+let counter1 = 0;
+let counter2 = 0;
+let counter3 = 0;
+let counter4 = 0;
+let counter5 = 0;
+let counter6 = 0;
+setInterval(() => {
+  if(counter1 == 65){
+    clearInterval();
+  }else{
+    counter1 += 1;
+    number1.innerHTML = counter1 +"%"
+  }
+}, 0);
+setInterval(() => {
+  if(counter2 == 50){
+    clearInterval();
+  }else{
+    counter2 += 1;
+    number2.innerHTML = counter2 +"%"
+  }
+}, 1);
+setInterval(() => {
+  if(counter3 == 30){
+    clearInterval();
+  }else{
+    counter3 += 1;
+    number3.innerHTML = counter3 +"%"
+  }
+}, 2);
+setInterval(() => {
+  if(counter4 == 25){
+    clearInterval();
+  }else{
+    counter4 += 1;
+    number4.innerHTML = counter4 +"%"
+  }
+}, 20);
+setInterval(() => {
+  if(counter5 == 75){
+    clearInterval();
+  }else{
+    counter5 += 1;
+    number5.innerHTML = counter5 +"%"
+  }
+}, 0);
+setInterval(() => {
+  if(counter6 == 60){
+    clearInterval();
+  }else{
+    counter6 += 1;
+    number6.innerHTML = counter6 +"%"
+  }
+}, 0);
 
 
+</script>
+<script>
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  if(width < 768) {
+    document.getElementById("insta-link").removeAttribute("href");
+    document.getElementById("tiktok-link").removeAttribute("href");
+    document.getElementById("github-link").removeAttribute("href");
+    document.getElementById("linkedin-link").removeAttribute("href");
+  }
+
+  $("#insta-btn").on('click', function(){
+     window.location = "https://www.instagram.com/el9adii/" 
+  });
+  $("#tiktok-btn").on('click', function(){
+     window.location = "https://www.tiktok.com/@el9adii"    
+  });
+  $("#github-btn").on('click', function(){
+     window.location = "https://github.com/ELKADI-MUSTAPHA"     
+  });
+  $("#linkedin-btn").on('click', function(){
+     window.location = "https://www.linkedin.com/in/mustapha-ettanti-1b2486175/"     
+  });
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
