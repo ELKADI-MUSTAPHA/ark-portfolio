@@ -152,6 +152,12 @@
     }
  } 
  @media (max-width: 427px) {
+     .logo-name {
+        font-size: 0.9rem;
+    }
+     .logo-img {
+        width: 40px;
+    }
     .home h1 {
         font-size: 50px;
     }
