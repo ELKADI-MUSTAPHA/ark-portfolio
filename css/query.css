@@ -158,6 +158,15 @@
      .logo-img {
         width: 40px;
     }
+     .social .header-social-link {
+        font-size: 1.3rem;
+    }
+     .social a .icon.tiktok {
+        width: 20px;
+    }
+     .fixed{
+         display: none;
+     }
     .home h1 {
         font-size: 50px;
     }
