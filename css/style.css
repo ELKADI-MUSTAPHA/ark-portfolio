@@ -30,6 +30,14 @@ header{
 .nav-link{
     color: var(--main-blue);
 }
+.navbar-toggler{
+    border: none;
+    display: contents;
+}
+.navbar-toggler-icon {
+    width: 1.8em;
+    height: 1.8em;
+}
 .nav-link.active{
     color: var(--main-green) !important;
 }
