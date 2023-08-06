@@ -15,7 +15,7 @@ a{
   text-decoration: none;
 }
 header{
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
 }
 .logo-name{
     font-size: 1.1rem;
