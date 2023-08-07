@@ -527,6 +527,10 @@ header{
   height: 90vh;
   min-height: 600px;
 }
+.projects .btn-primary{
+    background-color: #0bc2d9;
+    border: none;
+}
 .projects h1{
   font-size: 2rem;
   font-weight: bold;
