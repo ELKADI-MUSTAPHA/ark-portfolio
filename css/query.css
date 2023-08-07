@@ -164,6 +164,9 @@
      .social a .icon.tiktok {
         width: 20px;
     }
+     .clone-card {
+        left: -190px;
+    }
      .fixed{
          display: none;
      }
